@@ -1,0 +1,37 @@
+Model: "model_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ encoder_input (InputLayer)  [(None, 256, 256, 3)]     0         
+                                                                 
+ encoder_conv_0 (Conv2D)     (None, 256, 256, 3)       84        
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 256, 256, 3)       0         
+                                                                 
+ encoder_conv_1 (Conv2D)     (None, 128, 128, 16)      448       
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 128, 128, 16)      0         
+                                                                 
+ encoder_conv_2 (Conv2D)     (None, 64, 64, 32)        4640      
+                                                                 
+ leaky_re_lu_2 (LeakyReLU)   (None, 64, 64, 32)        0         
+                                                                 
+ encoder_conv_3 (Conv2D)     (None, 32, 32, 64)        18496     
+                                                                 
+ leaky_re_lu_3 (LeakyReLU)   (None, 32, 32, 64)        0         
+                                                                 
+ encoder_conv_4 (Conv2D)     (None, 16, 16, 128)       73856     
+                                                                 
+ leaky_re_lu_4 (LeakyReLU)   (None, 16, 16, 128)       0         
+                                                                 
+ flatten (Flatten)           (None, 32768)             0         
+                                                                 
+ encoder_output (Dense)      (None, 100)               3276900   
+                                                                 
+ model_1 (Functional)        (None, 256, 256, 3)       3554467   
+                                                                 
+=================================================================
+Total params: 6,928,891
+Trainable params: 6,928,891
+Non-trainable params: 0
+_________________________________________________________________
